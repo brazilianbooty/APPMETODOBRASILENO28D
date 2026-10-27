@@ -34,3 +34,13 @@
 .customer-footer span{font-size:9px;letter-spacing:1.3px;text-transform:uppercase;color:#927c8a}
 .customer-welcome button:focus-visible,.customer-welcome a:focus-visible,.customer-welcome summary:focus-visible{outline:3px solid #a90b60;outline-offset:4px}
 @media(min-width:700px){.customer-welcome{padding-top:40px}.customer-header{margin-bottom:42px}}
+
+/* Native illustrated exercise demonstrations. */
+.exercise-demo{width:100%;background:#fffcf7;border:1px solid #ead6e2;border-radius:18px;padding:10px 8px 12px;overflow:hidden;text-align:left}
+.exercise-demo-label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1px;font-weight:750;color:#a0145b;padding:2px 8px 7px}
+.exercise-demo iframe{width:100%;height:350px;border:0;display:block;border-radius:12px}
+.exercise-demo a{display:block;text-align:center;font-size:11px;font-weight:650;color:#99416f;padding:8px;text-decoration:underline;text-underline-offset:3px}
+.workout-image:has(.exercise-demo){aspect-ratio:auto;display:flex;flex-direction:column;background:transparent;padding:0;overflow:visible}
+.workout-image:has(.exercise-demo) .muscle-badge{position:static;align-self:flex-start;margin:8px 4px}
+.exercise-guide>.exercise-demo{max-width:800px;margin:auto}
+@media(min-width:700px){.exercise-demo iframe{height:480px}}
