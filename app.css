@@ -44,3 +44,5 @@
 .workout-image:has(.exercise-demo) .muscle-badge{position:static;align-self:flex-start;margin:8px 4px}
 .exercise-guide>.exercise-demo{max-width:800px;margin:auto}
 @media(min-width:700px){.exercise-demo iframe{height:480px}}
+
+.workout-image:has(.exercise-demo){height:auto;min-height:0}.workout-image:has(.exercise-demo) .exercise-demo{flex-shrink:0}
