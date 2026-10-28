@@ -1,4 +1,4 @@
-const CACHE = 'gluteo28-entregavel-3d-2';
+const CACHE = 'gluteo28-entregavel-3d-3';
 const BASE = ["/APPMETODOBRASILENO28D/", "/APPMETODOBRASILENO28D/manifest.webmanifest", "/APPMETODOBRASILENO28D/app.js", "/APPMETODOBRASILENO28D/image-data.js", "/APPMETODOBRASILENO28D/app.css"];
 self.addEventListener("install", event => {
   event.waitUntil(
