@@ -1,4 +1,4 @@
-const CACHE = 'gluteo28-entregavel-illustrated-2';
+const CACHE = 'gluteo28-entregavel-3d-2';
 const BASE = ["/APPMETODOBRASILENO28D/", "/APPMETODOBRASILENO28D/manifest.webmanifest", "/APPMETODOBRASILENO28D/app.js", "/APPMETODOBRASILENO28D/image-data.js", "/APPMETODOBRASILENO28D/app.css"];
 self.addEventListener("install", event => {
   event.waitUntil(
@@ -70,7 +70,7 @@ self.addEventListener("fetch", event => {
           return response;
         })
         .catch(() =>
-          caches.match("/APPMETODOBRASILENO28D/").then(response => response || Response.error())
+          caches.match(event.request).then(response => response || caches.match(url.pathname)).then(response => response || caches.match("/APPMETODOBRASILENO28D/")).then(response => response || Response.error())
         )
     );
     return;
